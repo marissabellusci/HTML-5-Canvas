@@ -18,6 +18,7 @@ ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 20;
+//ctx.globalCompositeOperation = 'multiply';
 
 // below are some dummy variables
 
@@ -45,7 +46,7 @@ function draw(e){
         hue = 0;
     }
 
-    if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1){
+    if (ctx.lineWidth >= 75 || ctx.lineWidth <= 1){
         direction = !direction;
     }
 
