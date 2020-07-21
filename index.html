@@ -8,9 +8,16 @@
 <canvas id="draw" width="800" height="800"></canvas>
 <script>
 
-    const canvas = document.querySelector('#draw');
-    const ctx = canvas.getContext('2d'); //Context is where you actually draw! You don't draw on the canvas itself.
-    
+const canvas = document.querySelector('#draw');
+const ctx = canvas.getContext('2d'); //Context is where you actually draw! You don't draw on the canvas itself.
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+ctx.strokeStyle = "#BADA55";
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+
 
 </script>
 
