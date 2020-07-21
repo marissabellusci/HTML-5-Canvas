@@ -24,10 +24,12 @@ ctx.lineWidth = 20;
 let isDrawing = false; // default set to false until you click (ensures just moving mouse without clicking/dragging does not draw). When you click down and begin drawing, it will change to true until you let go. 
 let lastX = 0; // lastX and lastY will be where we start the lines from
 let lastY = 0;
+let hue = 0;
 
 function draw(e){
     if (!isDrawing){return} //stops function from running if user is not mousedown
     console.log(e);
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
     ctx.beginPath();
     //start from
     ctx.moveTo(lastX, lastY);
